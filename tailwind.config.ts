@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        sm: "640px",
+        // other breakpoints...
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
