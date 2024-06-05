@@ -7,10 +7,18 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    keyframes: {
+      marquee: {
+        "0%": { transform: "translateX(100%)" },
+        "100%": { transform: "translateX(-100%)" },
+      },
+    },
+    animation: {
+      marquee: "marquee 30s linear infinite",
+    },
     extend: {
       screens: {
         sm: "640px",
-        // other breakpoints...
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

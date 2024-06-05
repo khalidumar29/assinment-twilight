@@ -64,26 +64,26 @@ const Carousel: FC = () => {
           </div>
           <button
             onClick={prevSlide}
-            className="absolute top-1/2 -translate-y-1/2 left-4 z-10 p-2 drop-shadow-lg bg-[#302e2ecc] rounded-full text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-300 md:hidden lg:hidden"
+            className="absolute top-1/2 -translate-y-1/2 left-4 z-10 p-2 bg-[#23232370] rounded-full text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-300 md:hidden lg:hidden"
           >
             <ArrowLeft className="w-8 h-8" />
           </button>
           <button
             onClick={nextSlide}
-            className="absolute top-1/2 -translate-y-1/2 right-4 z-10 p-2 drop-shadow-lg bg-[#302e2ecc] rounded-full text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-300 md:hidden lg:hidden"
+            className="absolute top-1/2 -translate-y-1/2 right-4 z-10 p-2 bg-[#23232370] rounded-full text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-300 md:hidden lg:hidden"
           >
             <ArrowRight className="w-8 h-8" />
           </button>
           <div className="absolute flex justify-between items-center right-6 bottom-9 text-white gap-5">
             <button
               onClick={prevSlide}
-              className="hidden md:block lg:block top-1/2 -translate-y-1/2 left-4 z-10 p-2 drop-shadow-lg bg-[#302e2ecc] rounded-full text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-300"
+              className="hidden md:block lg:block top-1/2 -translate-y-1/2 left-4 z-10 p-2  bg-[#23232370] rounded-full text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-300"
             >
               <ArrowLeft className="w-8 h-8" />
             </button>
             <button
               onClick={nextSlide}
-              className="hidden md:block lg:block top-1/2 -translate-y-1/2 left-4 z-10 p-2 drop-shadow-lg bg-[#302e2ecc] rounded-full text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-300"
+              className="hidden md:block lg:block top-1/2 -translate-y-1/2 left-4 z-10 p-2  bg-[#23232370] rounded-full text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-300"
             >
               <ArrowRight className="w-8 h-8" />
             </button>

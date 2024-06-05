@@ -17,7 +17,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ title, imageUrl }) => {
         <div className="absolute inset-0 bg-black opacity-50 transition-opacity duration-300 " />
       </div>
       <div className="absolute bottom-3 left-0 w-full flex items-end">
-        <p className="text-[14px] font-semibold text-white w-full text-center">
+        <p className="text-[14px] font-extrabold text-white w-full text-center">
           {title}
         </p>
       </div>

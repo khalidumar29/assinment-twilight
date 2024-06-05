@@ -6,11 +6,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: #ffff;
   font-family: kanit;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.shop-scroll::-webkit-scrollbar {
+  display: none;
 }
 
 .hover-underline {
@@ -49,4 +58,45 @@ body {
 .custom-btn:hover {
   box-shadow: inset 250px 0 0 0 rgb(143, 143, 143);
   color: white;
+}
+
+.newspaper-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.newspaper-headlines {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+
+.newspaper-headline {
+  flex-shrink: 0;
+  white-space: nowrap;
+  font-size: 24px;
+  padding-right: 20px;
+  /* Adjust spacing between headlines */
+  animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
 }
