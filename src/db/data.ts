@@ -16,3 +16,21 @@ export const categories = [
     imageUrl: "/glassware.jpg",
   },
 ];
+
+export const images = [
+  {
+    src: "/bed.webp",
+    alt: "Twilight Landscape",
+    title: "Simple & Decidedly",
+  },
+  {
+    src: "/table.webp",
+    alt: "Bella and Edward",
+    title: "Bella and Edward",
+  },
+  {
+    src: "/bed.webp",
+    alt: "Vampire Coven",
+    title: "The Cullen Coven",
+  },
+];
