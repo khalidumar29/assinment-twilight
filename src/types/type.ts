@@ -23,6 +23,6 @@ export interface Product {
 
 export interface ProductCategory {
   latestProducts: Product[];
-  bedroomKit: Product[];
+  sculpture: Product[];
   furniture: Product[];
 }

@@ -1,7 +1,10 @@
 "use client";
 import Carousel from "@/components/Carousel";
+import Furniture from "@/components/Furniture";
 import Headline from "@/components/Headline";
 import LatestArrival from "@/components/LatestArrival";
+import Sculpture from "@/components/Sculpture";
+import SculptureShoCase from "@/components/SculptureShocae";
 import ShoCase from "@/components/ShoCase";
 import ShopCategory from "@/components/ShopCategory";
 import BottomNav from "@/components/navbar/BottomNav";
@@ -32,6 +35,9 @@ export default function Home() {
       )}
       <Headline />
       <ShoCase />
+      <Sculpture handleCardClick={handleCardClick} />
+      <Furniture handleCardClick={handleCardClick} />
+      <SculptureShoCase handleCardClick={handleCardClick} />
       <div className="lg:hidden md:block sm:block ">
         <BottomNav />
       </div>
