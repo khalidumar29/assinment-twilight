@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 
 import Navbar from "@/components/navbar/Navbar";
+import Modal from "@/components/ui/Modal";
 import type { Metadata } from "next";
 import { Kanit } from "next/font/google";
 import "./globals.css";
