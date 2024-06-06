@@ -97,7 +97,7 @@ export const products: ProductCategory[] = [
         old_price: 200,
       },
       {
-        id: 2,
+        id: 3,
         title: "Woolen Blanket",
         imageSrc: "/sculpture/sculpture-3.webp",
         hoverImageSrc: "/sculpture/sculpture-hover-3.webp",
@@ -106,7 +106,7 @@ export const products: ProductCategory[] = [
         old_price: 200,
       },
       {
-        id: 2,
+        id: 4,
         title: "Cushion Blanket",
         imageSrc: "/sculpture/sculpture-4.webp",
         hoverImageSrc: "/sculpture/sculpture-hover-4.webp",
