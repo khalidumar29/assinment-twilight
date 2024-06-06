@@ -1,8 +1,17 @@
 import { products } from "@/db/data";
 
-const page = ({ params }: { params: { slug: string } }) => {
-  const product = products.find((product) => product.id === id.toString());
-  return <div>My Post: {params.slug}</div>;
-};
+type Props = {};
 
-export default page;
+export default function page({ params }: { params: { productId: number } }) {
+  const productId = Number(params.productId);
+
+  const product = products[0].latestProducts.find(
+    (product: any) => product.id === productId
+  );
+
+  /*const product = allproducts.find(
+  (product: any) => product.id === productId
+);*/
+
+  return <div></div>;
+}

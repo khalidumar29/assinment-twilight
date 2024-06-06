@@ -16,16 +16,16 @@ const Sculpture: React.FC<SculptureProps> = ({ handleCardClick }) => {
   return (
     <>
       <SectionContainer>
-        <div className="container mb-6 mt-16 pt-4">
-          <div className="flex items-center font-semibold mb-5 justify-between">
-            <TitleText title="Sculpture Vase" />
-            <Button text="View All">
+        <div className='container mb-6 mt-16 pt-4'>
+          <div className='flex items-center font-semibold mb-5 justify-between'>
+            <TitleText title='Sculpture Vase' />
+            <Button text='View All'>
               <ArrowRight size={16} strokeWidth={4} />
             </Button>
           </div>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-          {products[0].sculpture.map((product) => (
+        <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4'>
+          {products[0].sculpture.map((product: any) => (
             <ProductCard
               key={product.id}
               id={product.id}
