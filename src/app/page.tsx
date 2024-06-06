@@ -7,6 +7,7 @@ import Sculpture from "@/components/Sculpture";
 import SculptureShoCase from "@/components/SculptureShocae";
 import ShoCase from "@/components/ShoCase";
 import ShopCategory from "@/components/ShopCategory";
+import Testimonials from "@/components/Testimonials";
 import BottomNav from "@/components/navbar/BottomNav";
 import Modal from "@/components/ui/Modal";
 import { Product } from "@/types/type";
@@ -38,6 +39,7 @@ export default function Home() {
       <Sculpture handleCardClick={handleCardClick} />
       <Furniture handleCardClick={handleCardClick} />
       <SculptureShoCase handleCardClick={handleCardClick} />
+      {/* <Testimonials /> */}
       <div className="lg:hidden md:block sm:block ">
         <BottomNav />
       </div>

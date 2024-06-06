@@ -155,3 +155,18 @@ export const products: ProductCategory[] = [
     ],
   },
 ];
+
+export const testimonials = [
+  {
+    content: "Very Nice products really happy with their service",
+    author: "Abrar Hossain",
+  },
+  {
+    content: "Love their products always make me so happy!!",
+    author: "Mohammed Hossain",
+  },
+  {
+    content: "Amazing products, changes the look of your sweet home!",
+    author: "Rodela Amin",
+  },
+];
