@@ -49,30 +49,28 @@ const SculptureShoCase: React.FC<SculptureShoCaseProps> = ({
           </div>
           <div className='w-full md:w-2/4 h-2/3'>
             <div className='relative w-full mx-auto h-[55vh] lg:h-[88vh] pt-5'>
-              <div className='rounded-xl overflow-hidden h-full relative'>
-                <div className='flex w-full justify-center items-center'>
-                  {products[0].sculpture.map((product, index) => (
-                    <div
-                      className='transition-transform duration-500 h-full w-full'
-                      style={{
-                        transform: `translateX(-${currentIndex * 100}%)`,
-                      }}
-                    >
-                      <ProductCard
-                        key={product.id}
-                        id={product.id}
-                        title={product.title}
-                        imageSrc={product.imageSrc}
-                        hoverImageSrc={product.hoverImageSrc}
-                        label={product.label}
-                        price={product.price}
-                        old_price={product.old_price}
-                        product={product}
-                        onCardClick={handleCardClick}
-                      />
-                    </div>
-                  ))}
-                </div>
+              <div className='rounded-xl overflow-hidden h-full relative flex'>
+                {products[0].sculpture.map((product, index) => (
+                  <div
+                    className='transition-transform duration-500 h-full w-full'
+                    style={{
+                      transform: `translateX(-${currentIndex * 100}%)`,
+                    }}
+                  >
+                    <ProductCard
+                      key={product.id}
+                      id={product.id}
+                      title={product.title}
+                      imageSrc={product.imageSrc}
+                      hoverImageSrc={product.hoverImageSrc}
+                      label={product.label}
+                      price={product.price}
+                      old_price={product.old_price}
+                      product={product}
+                      onCardClick={handleCardClick}
+                    />
+                  </div>
+                ))}
 
                 <button
                   onClick={prevSlide}
