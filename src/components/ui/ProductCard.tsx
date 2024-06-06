@@ -1,5 +1,6 @@
 "use client";
 import { ProductCardProps } from "@/types/type";
+import Link from "next/link";
 import { useState } from "react";
 
 const ProductCard: React.FC<ProductCardProps> = ({
@@ -34,13 +35,15 @@ const ProductCard: React.FC<ProductCardProps> = ({
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          <img
-            src={currentImageSrc}
-            alt="Clothing"
-            width={300}
-            height={300}
-            className="object-cover w-full aspect-square lg:h-full group-hover:scale-[1.2] transition-transform duration-500"
-          />
+          <Link href={`/details/${id}`}>
+            <img
+              src={currentImageSrc}
+              alt="Clothing"
+              width={300}
+              height={300}
+              className="object-cover w-full aspect-square lg:h-full group-hover:scale-[1.2] transition-transform duration-500"
+            />
+          </Link>
           <div className="absolute top-4 left-4 bg-neutral-400 text-white px-2 py-1 rounded-md text-sm">
             {label}
           </div>
